@@ -2,35 +2,26 @@
     <!--{{data}}-->
  <div ng-repeat="re in data" class="row" style="border: 1px solid green; cursor: pointer" ng-click="onClick(re)">
         <div class="col-md-7">
-            <div>
-                <i class="fa fa-tag" title="Location"></i>
-                <span class="fa-padding">{{re.price}}</span>
-            </div>
+          <div>
+            <i class="fa fa-tag" title="Location"></i>
+            <span class="fa-padding">{{re.city}}, {{re.neighborhood}}</span>
+          </div>
 
-            <!--<div>
-                <i class="fa fa-usd" title="Price"></i>
-                <span>{{re.serverData.price}}</span>
-            </div>
+          <div>
+            <i class="fa fa-usd" title="Price"></i>
+            <span>{{re.price}}</span>
+          </div>
 
-            <div>
-                <i class="fa fa-university" title="Size"></i>
-                <span>{{re.serverData.size}}</span>
-            </div>
+          <div>
+            <i class="fa fa-university" title="Size"></i>
+            <span class="fa-padding">{{re.propertyType}}</span>
+          </div>
 
-            <div>
-                <i class="fa fa-building-o" title="Bedrooms"></i>
-                <span>{{re.serverData.bedrooms}}</span>
-            </div>-->
-
-
-
-
-       </div>
-
-        <!--<div class="col-md-5">
-            <img ng-src="{{re.serverData.thumbnail}}">
-        </div>-->
-
+          <div>
+            <i class="fa fa-building-o" title="Bedrooms"></i>
+            <span>{{re.houseSize}} (Square meter)</span>
+          </div>
+        </div>
 
     </div>
 </div>
